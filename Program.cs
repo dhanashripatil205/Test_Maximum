@@ -8,12 +8,12 @@ namespace TestMAxNumOf3Var
         {
             Console.WriteLine("****** Welcome to Find the Max Num of 3 Variables Program ******");
 
-            float X = 6.9F;
-            float Y = 13.3F;
-            float Z = 1.2F;
+            string X = "Dhanashri";
+            string Y = "Vandana";
+            string Z = "Patil";
 
-            float val = FindMax<float>.MaxFloatNumber(X, Y, Z);
-            Console.WriteLine("The greater num is " + val);
+            string val = FindMax<string>.MaxOfString(X, Y, Z);
+            Console.WriteLine("The greater String is " + val);
         }
     }
 }
