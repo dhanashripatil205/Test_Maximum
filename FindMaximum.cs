@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace TestMaxNumOf3Var
 {
-    public class FindMax<T> where T : IComparable
+    public class FindMaximum<T> where T : IComparable
     {
-        public T A, B, C;
-        public FindMax(T A, T B, T C)
+        public T A, B, C, Max;
+        public  FindMaximum(T A, T B, T C)
         {
             this.A = A;
             this.B = B;
             this.C = C;
         }
-        public static T MaxNumber(T A, T B, T C)
+        public static T MaxNum(T A, T B, T C)
         {
             if (A.CompareTo(B) > 0 && A.CompareTo(C) > 0 ||
                     A.CompareTo(B) >= 0 && A.CompareTo(C) > 0 ||
@@ -38,16 +38,20 @@ namespace TestMaxNumOf3Var
                 return C;
             }
             return default;
-
-
-
-
         }
         public T MaxMethod()
         {
-            T Max = FindMax<T>.MaxNumber(this.A, this.B, this.C);
+            Max = FindMaximum<T>.MaxNum(this.A, this.B, this.C);
+            toPrint(Max);
             return Max;
 
         }
+        public void toPrint(T Max)
+        {
+            Console.WriteLine("Maximum is " + Max);
+        }
+
+
+
     }
 }
