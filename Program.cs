@@ -8,8 +8,8 @@ namespace TestMAxNumOf3Var
         {
             Console.WriteLine("****** Welcome to Find the Max Num of 3 Variables Program ******");
 
-            int num = FindMax<int>.MaxNumber(99, 48, 28);
-            Console.WriteLine("The greater Integer number is : " + num);
+            FindMaximum<int> obj = new FindMaximum<int>(69, 53, 92);
+            obj.MaxMethod();
 
         }
     }
