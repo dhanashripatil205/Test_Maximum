@@ -10,6 +10,7 @@ namespace TestMAxNumOf3Var
 
             FindMaximum<int> obj = new FindMaximum<int>(69, 53, 92);
             obj.MaxMethod();
+            
 
         }
     }
