@@ -9,7 +9,7 @@ namespace TestMaxNumOf3Var
     public class FindMaximum<T> where T : IComparable
     {
         public T A, B, C, Max;
-        public  FindMaximum(T A, T B, T C)
+        public FindMaximum(T A, T B, T C)
         {
             this.A = A;
             this.B = B;
